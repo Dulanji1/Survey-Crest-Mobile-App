@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.surveyCreate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/thick_divider"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+                    <TextView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/backbtn"
+                        android:textColor="@color/white_with_alpha"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/btnPublish"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_baseline_near_me_24"
+                        app:tint="@color/colorAccentPatient" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_more_vert_24"
+                        app:tint="@color/RoyalBlue" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSurveyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/space_default_color"
+            android:text="Survey name"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSurveyName" />
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:id="@+id/expandable_fab_layout"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            android:layout_height="0dp">
+
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:id="@+id/expandable_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="70dp"
+                app:efab_closingAnticipateTension="0"
+                app:efab_color="@color/MediumSeaGreen"
+                app:efab_icon="@drawable/ic_add_circle_black_24dp"
+                app:efab_iconAnimationRotationDeg="-225" />
+
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay_color="@color/list_item_background"
+                app:overlay_alpha="0.75"
+                app:overlay_openingAnimationDurationMs="1000"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnQuestionBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_widgets_24"
+                app:label_text="Question bank"
+                app:label_backgroundColor="@color/transparent_blue"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_more_horiz_24"
+                app:label_text="Points"
+                app:label_backgroundColor="@color/transparent_blue"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnFaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_tag_faces_24"
+                app:label_text="Faces"
+                app:label_backgroundColor="@color/transparent_blue"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_star_24"
+                app:label_text="Rating"
+                app:label_backgroundColor="@color/transparent_blue"/>
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_clear_all_24"
+                app:label_text="Drop down"
+                app:label_backgroundColor="@color/transparent_blue"/>
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_text_fields_24"
+                app:label_text="Text"
+                app:label_backgroundColor="@color/transparent_blue"/>
+            <com.nambimobile.widgets.efab.FabOption
+                android:id="@+id/btnMultipleChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_color="@color/Teal"
+                app:fab_icon="@drawable/ic_baseline_menu_24"
+                app:label_text="Multiple choice"
+                app:label_backgroundColor="@color/transparent_blue"/>
+
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

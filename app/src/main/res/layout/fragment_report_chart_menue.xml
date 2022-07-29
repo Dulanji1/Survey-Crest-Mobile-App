@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.reportChartMenue">
+
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="663dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/RoyalBlue"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/reptanalz"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="273dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="337dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/topicrept"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="44dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/dropdown2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="31dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/Responsecollected"
+                    android:textColor="@color/Black" />
+
+                <Space
+                    android:layout_width="29dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/county"
+                    android:textColor="@color/Blue"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="31dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/surveystatus"
+                    android:textColor="@color/Black" />
+
+                <Space
+                    android:layout_width="29dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/statusactive"
+                    android:textColor="@color/Green"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="31dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/createdon"
+                    android:textColor="@color/Black" />
+
+                <Space
+                    android:layout_width="29dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/createddateo"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="31dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/updaeon"
+                    android:textColor="@color/Black" />
+
+                <Space
+                    android:layout_width="29dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="149dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/upadtedater"
+                    android:textColor="@color/Black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="193dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="73dp"
+                                    android:orientation="horizontal">
+
+                                    <Space
+                                        android:layout_width="19dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <ImageView
+                                        android:id="@+id/barchartbtn1"
+                                        android:layout_width="124dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/chr1"
+                                        android:scaleType="center" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/barchartbtn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:text="@string/barchat"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:orientation="horizontal">
+
+                                    <Space
+                                        android:layout_width="17dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <ImageView
+                                        android:id="@+id/piechartbtn1"
+                                        android:layout_width="134dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/chr3"
+                                        android:scaleType="center" />
+
+                                    <Space
+                                        android:layout_width="17dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/piechartbtn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:text="@string/piechart"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="193dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="73dp"
+                                    android:orientation="horizontal">
+
+                                    <Space
+                                        android:layout_width="19dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <ImageView
+                                        android:id="@+id/linechartbtn1"
+                                        android:layout_width="124dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/chr2"
+                                        android:scaleType="center" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/linechartbtn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:text="@string/linechart"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:orientation="horizontal">
+
+                                    <Space
+                                        android:layout_width="17dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+
+                                    <ImageView
+                                        android:id="@+id/columnchartbtn1"
+                                        android:layout_width="134dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/columnchart8"
+                                        android:scaleType="center" />
+
+                                    <Space
+                                        android:layout_width="17dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/columnchartbtn2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:text="@string/columncht"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="239dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="150dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/requestnewctbtn1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="78dp"
+                                        android:background="@drawable/charticn2" />
+
+                                    <TextView
+                                        android:id="@+id/requestnewctbtn2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/otherreqst"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/Black"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
